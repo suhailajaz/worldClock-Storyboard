@@ -7,19 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A1B2A5E28C9FCA2005FF76B /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1A1B2A5D28C9FCA2005FF76B /* IQKeyboardManagerSwift */; };
+		1A270D4228C2782A00C35604 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A270D4128C2782A00C35604 /* NewViewController.swift */; };
+		1A7520E128C270140080C93F /* ClockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7520E028C270140080C93F /* ClockModel.swift */; };
+		1A7520E328C2727D0080C93F /* ClockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7520E228C2727D0080C93F /* ClockData.swift */; };
+		1A767A0628C26459000D3849 /* ClockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A767A0528C26459000D3849 /* ClockManager.swift */; };
 		1A9F2C0028C2546900B76793 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9F2BFF28C2546900B76793 /* AppDelegate.swift */; };
 		1A9F2C0228C2546900B76793 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9F2C0128C2546900B76793 /* SceneDelegate.swift */; };
-		1A9F2C0428C2546900B76793 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9F2C0328C2546900B76793 /* ViewController.swift */; };
 		1A9F2C0728C2546900B76793 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9F2C0528C2546900B76793 /* Main.storyboard */; };
 		1A9F2C0928C2546900B76793 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A9F2C0828C2546900B76793 /* Assets.xcassets */; };
 		1A9F2C0C28C2546900B76793 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9F2C0A28C2546900B76793 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A270D4128C2782A00C35604 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		1A7520E028C270140080C93F /* ClockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockModel.swift; sourceTree = "<group>"; };
+		1A7520E228C2727D0080C93F /* ClockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockData.swift; sourceTree = "<group>"; };
+		1A767A0528C26459000D3849 /* ClockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockManager.swift; sourceTree = "<group>"; };
 		1A9F2BFC28C2546900B76793 /* worldClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = worldClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9F2BFF28C2546900B76793 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A9F2C0128C2546900B76793 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1A9F2C0328C2546900B76793 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A9F2C0628C2546900B76793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A9F2C0828C2546900B76793 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A9F2C0B28C2546900B76793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,12 +38,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A1B2A5E28C9FCA2005FF76B /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A767A0328C26425000D3849 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A9F2C0528C2546900B76793 /* Main.storyboard */,
+				1A767A0428C26434000D3849 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A767A0428C26434000D3849 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1A270D4128C2782A00C35604 /* NewViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1A767A0728C2645F000D3849 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A767A0528C26459000D3849 /* ClockManager.swift */,
+				1A7520E228C2727D0080C93F /* ClockData.swift */,
+				1A7520E028C270140080C93F /* ClockModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1A9F2BF328C2546900B76793 = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +93,8 @@
 			children = (
 				1A9F2BFF28C2546900B76793 /* AppDelegate.swift */,
 				1A9F2C0128C2546900B76793 /* SceneDelegate.swift */,
-				1A9F2C0328C2546900B76793 /* ViewController.swift */,
-				1A9F2C0528C2546900B76793 /* Main.storyboard */,
+				1A767A0728C2645F000D3849 /* Model */,
+				1A767A0328C26425000D3849 /* View */,
 				1A9F2C0828C2546900B76793 /* Assets.xcassets */,
 				1A9F2C0A28C2546900B76793 /* LaunchScreen.storyboard */,
 				1A9F2C0D28C2546900B76793 /* Info.plist */,
@@ -83,6 +118,9 @@
 			dependencies = (
 			);
 			name = worldClock;
+			packageProductDependencies = (
+				1A1B2A5D28C9FCA2005FF76B /* IQKeyboardManagerSwift */,
+			);
 			productName = worldClock;
 			productReference = 1A9F2BFC28C2546900B76793 /* worldClock.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +149,9 @@
 				Base,
 			);
 			mainGroup = 1A9F2BF328C2546900B76793;
+			packageReferences = (
+				1A1B2A5C28C9FCA2005FF76B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 1A9F2BFD28C2546900B76793 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A9F2C0428C2546900B76793 /* ViewController.swift in Sources */,
+				1A7520E328C2727D0080C93F /* ClockData.swift in Sources */,
+				1A767A0628C26459000D3849 /* ClockManager.swift in Sources */,
+				1A270D4228C2782A00C35604 /* NewViewController.swift in Sources */,
+				1A7520E128C270140080C93F /* ClockModel.swift in Sources */,
 				1A9F2C0028C2546900B76793 /* AppDelegate.swift in Sources */,
 				1A9F2C0228C2546900B76793 /* SceneDelegate.swift in Sources */,
 			);
@@ -300,7 +344,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.suhail.worldClock;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suhail.testLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -328,7 +372,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.suhail.worldClock;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suhail.testLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -358,6 +402,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A1B2A5C28C9FCA2005FF76B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A1B2A5D28C9FCA2005FF76B /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A1B2A5C28C9FCA2005FF76B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1A9F2BF428C2546900B76793 /* Project object */;
 }
